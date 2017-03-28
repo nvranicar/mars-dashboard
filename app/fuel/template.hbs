@@ -4,12 +4,13 @@
 <form class="form" {{action "save" on="submit"}}>
   <div class="form-group">
   <label for="fuel-type">Fuel Type</label>
-  <select class="fuel-options" name="">
+  {{!-- <select class="fuel-options" value=formValues.fuelType>
     <option value="select-option">Please Select</option>
     <option value="Super-Plus">Super Plus</option>
     <option value="Mid">Mid</option>
     <option value="Regular">Regular</option>
-  </select>
+  </select> --}}
+  {{input value=formValues.fuelType class="form-control" placeholder="Fuel Type"}}
   </div>
   <div class="form-group">
   <label for="burn-rate">Burn Rate</label>
